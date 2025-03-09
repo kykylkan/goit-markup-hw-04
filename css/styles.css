@@ -279,9 +279,13 @@ a:hover, a:focus {
     row-gap: 48px;
 }
 
+#portfolio .container {
+    overflow: hidden;
+}
 #portfolio .list-item-wrapper {
     border: 1px solid #e7e9fc;
     border-top: none;
+    overflow: hidden;
 }
 
 .list-item-portfolio {
@@ -296,13 +300,17 @@ a:hover, a:focus {
 
 .list-item-portfolio:hover,
 .list-item-portfolio:focus {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.list-item-portfolio:hover .overlay-text {
+    transform: translateY(0%);
+}
 
 .image-wrapper {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 .overlay {
@@ -316,19 +324,21 @@ a:hover, a:focus {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 40px 32px 0 32px;
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text {
+    position: absolute;
+    top: 0;
     color: #F4F4FD;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: left;
+    padding: 40px 32px;
 }
 
 .image-wrapper:hover .overlay {
@@ -384,6 +394,7 @@ a:hover, a:focus {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     padding: 0;
     margin-top: 8px;
@@ -404,6 +415,7 @@ a:hover, a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover,
@@ -446,5 +458,5 @@ a:hover, a:focus {
 }
 
 .list-item .social-icons {
-    justify-content: center;
+    justify-content: flex-start;
 }
