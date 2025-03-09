@@ -471,8 +471,8 @@ a:hover, a:focus {
     border-radius: 4px;
 }
 
-.footer .social-icons-item:hover .social-icons-link,
-.footer .social-icons-item:focus .social-icons-link {
+.footer .social-icons-link:hover,
+.footer .social-icons-link:focus {
     background-color: #31d0aa;
 }
 .footer .social-icons {
