@@ -434,19 +434,25 @@ a:hover, a:focus {
 
 .footer .container {
     display: flex;
-    align-items: center;
+    align-items: baseline
 }
 
-.footer .footer-social {
-    margin-left: 120px;
+.footer-left {
+    margin-right: 120px;
 }
 
-.footer-social-title {
-    margin-bottom: 16px;
+.footer-social {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.footer-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
+    color: #FFFFFF;
 }
 
 .icon-box {
@@ -462,6 +468,9 @@ a:hover, a:focus {
     border-radius: 4px;
 }
 
+.footer .social-icons-item:hover .social-icons-link {
+    background-color: #31d0aa;
+}
 .footer .social-icons {
     justify-content: flex-start;
 }
