@@ -473,4 +473,5 @@ a:hover, a:focus {
 }
 .footer .social-icons {
     justify-content: flex-start;
+    gap: 16px;
 }
