@@ -279,9 +279,7 @@ a:hover, a:focus {
     row-gap: 48px;
 }
 
-#portfolio .container {
-    overflow: hidden;
-}
+
 #portfolio .list-item-wrapper {
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -457,6 +455,6 @@ a:hover, a:focus {
     border-radius: 4px;
 }
 
-.list-item .social-icons {
+.footer .social-icons {
     justify-content: flex-start;
 }
